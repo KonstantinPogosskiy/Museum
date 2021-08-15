@@ -1,6 +1,7 @@
 html {
     width: 1920px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -45,7 +46,42 @@ nav {
 }
 
 .label {
-    margin: 5px 0 5px 0;
+    margin: 8px 0 0 0;
+}
+
+.input {
+    margin: 49px 0 0 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.bye_now {
+    width: 175px;
+    height: 50px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.bye_now:hover {
+    background: #9D8665;
+    cursor: pointer;
+}
+
+.counter {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    display: flex;
 }
 
 .louvre {
@@ -81,7 +117,12 @@ nav {
     letter-spacing: 2px;
 }
 
-.list li:hover {
+.list a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.list a:hover {
     color: #9D8665;
     cursor: pointer;
 }
@@ -157,6 +198,7 @@ h5 {
     font-size: 28px;
     line-height: 33px;
     color: #FFFFFF;
+    margin: 0;
 }
 
 p {
@@ -191,7 +233,7 @@ p {
     background: #9d8665;
 }
 
-.Visiting {
+#Visiting {
     background: #FFFFFF;
 }
 
@@ -218,11 +260,11 @@ p {
     width: 100%;
 }
 
-.Explore {
+#Explore {
     background: #030303;
 }
 
-.Explore .container {
+#Explore .container {
     display: flex;
 }
 
@@ -254,11 +296,11 @@ p {
     color: #9d8665;
 }
 
-.Video {
+#Video {
     background: #FFFFFF;
 }
 
-.Video p {
+#Video p {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -271,11 +313,11 @@ p {
     color: #000000;
 }
 
-.Video .container {
+#Video .container {
     margin: 90px auto 0 auto;
 }
 
-.Video h2 {
+#Video h2 {
     padding: 40px 0 0 0;
     width: 50%;
     margin: 0;
@@ -291,9 +333,10 @@ p {
 .bye {
     display: flex;
     justify-content: space-between;
+    padding: 75px 0 75px 0;
 }
 
-.Tickets span {
+#Tickets span {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -304,6 +347,139 @@ p {
     padding: 0;
 }
 
-.Tickets input {
+#Tickets input {
     display: inline-block;
+}
+
+.ticket_img {
+    padding: 0 60px 0 0;
+}
+
+.amount p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.amount .total {
+    padding: 50px 0 50px 0;
+}
+
+.counter p{
+    margin: auto;
+    padding: 0;
+}
+
+.amount .plus {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.amount .minus {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.minus:hover {
+    cursor: pointer;
+    color: #9D8665;
+}
+
+.plus:hover {
+    cursor: pointer;
+    color: #9D8665;
+}
+
+#Contacts {
+    background: #FFFFFF;
+}
+
+.contacts_text {
+    display: flex;
+    justify-content: space-between;
+    margin: 75px 0 75px 0;
+}
+
+.text h5 {
+    color: #000000;
+    margin: 0;
+    padding: 0 0 16px 0;
+}
+
+.text p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+footer {
+    background: #030303;
+    height: 300px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo {
+    width: 348px;
+}
+
+.social {
+    display: flex;
+    align-content: flex-end;
+
+}
+
+.social i {
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.social i:hover {
+    color: #9D8665;
+    cursor: pointer;
+}
+
+.net {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin: auto auto auto 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer .logo, .footer_tabs, .social {
+    padding: 75px 0 0 0;
+}
+
+
+footer .footer_tabs ul {
+    display: block;
+    padding: 0 153px 0 0;
+}
+
+.footer_tabs {
+    width: 107px;
+    padding-right: 153px;
 }

@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -18,17 +18,17 @@
         </div>
         <div class="tabs">
             <ul class="list">
-                <li>Visiting</li>
-                <li>Explore</li>
-                <li>Video</li>
-                <li>Tickets</li>
-                <li>Contacts</li>
+                <li><a href="#Visiting">Visiting</a></li>
+                <li><a href="#Explore">Explore</a></li>
+                <li><a href="#Video">Video</a></li>
+                <li><a href="#Tickets">Tickets</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
             </ul>
         </div>
     </nav>
 </header>
 <main>
-    <section class="Welcome">
+    <section id="Welcome">
         <div class="bg_museum">
             <div class="container">
                 <div class="welcome_louvre">
@@ -39,7 +39,7 @@
             </div>
         </div>
     </section>
-    <section class="Visiting">
+    <section id="Visiting">
         <div class="container">
             <h2>Virtual tour</h2>
             <div class="tours">
@@ -82,7 +82,7 @@
             </div>
         </div>
     </section>
-    <section class="Explore">
+    <section id="Explore">
         <div class="container">
             <div class="explore_description">
                 <h2>Picture explore</h2>
@@ -95,7 +95,7 @@
             <div class="explore_image"><img alt="#" src="img/Rectangle.png"></div>
         </div>
     </section>
-    <section class="Video">
+    <section id="Video">
         <div class="container">
             <iframe width="1440px" height="714px" src="https://www.youtube.com/embed/zp1BXPX8jcU"></iframe>
             <div class="video_description">
@@ -105,29 +105,90 @@
             </div>
         </div>
     </section>
-    <section class="Tickets">
+    <section id="Tickets">
         <div class="container">
             <h2>Buy tickets</h2>
             <div class="bye">
-                <div><img alt="#" src="img/Rectangle_2.png"></div>
+                <div class="ticket_img">
+                    <img alt="#" src="img/Rectangle_2.png">
+                </div>
                 <div class="type">
                     <h5>Ticket Type</h5>
-                    <label>
-                        <input type="radio"><span>Permanent exhibition</span>
-                        <input type="radio"><span>Temporary exhibition</span>
-                        <input type="radio"><span>Combined Admission</span>
-                    </label>
+                    <div class="input">
+                        <input type="radio">&nbsp Permanent exhibition
+                    </div>
+                    <div class="input">
+                        <input type="radio">&nbsp Temporary exhibition
+                    </div>
+                    <div class="input">
+                        <input type="radio">&nbsp Combined Admission
+                    </div>
                 </div>
                 <div class="amount">
                     <h5>Amount</h5>
+                    <p>Basic 18+</p>
+                    <div class="counter">
+                        <p class="minus">-</p>
+                        <p>1</p>
+                        <p class="plus">+</p>
+                    </div>
+                    <p>Senior 65+</p>
+                    <div class="counter">
+                        <p class="minus">-</p>
+                        <p>1</p>
+                        <p class="plus">+</p>
+                    </div>
+                    <h5 class="total">Total $220</h5>
+                    <button class="bye_now">Bye Now</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="Contacts">
-        <div class="container">hjkhjkhjkh</div>
+    <section id="Contacts">
+        <div class="container">
+            <h2>Contacts</h2>
+            <div class="contacts_text">
+                <div class="text">
+                    <h5>Palais Royal<br>Musee du Louvre</h5>
+                    <p>address: 75001 Paris, France</p>
+                    <p>phone: +33(0) 1 40 20 50 50</p>
+                    <p>mail: info@louvre.fr</p>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.563870992307!2d2.337707139242546!3d48.8598909305381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2z0JvRg9Cy0YA!5e0!3m2!1sru!2sby!4v1628975435619!5m2!1sru!2sby" width="960" height="620" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
-<footer></footer>
+<footer>
+    <div class="container">
+        <div class="logo">
+            <div class="label"><img alt="#" src="img/Vector.png"></div>
+            <div class="louvre"><a href="#">louvre</a></div>
+        </div>
+        <div class="footer_tabs">
+            <ul class="list">
+                <li><a href="#Welcome">Welcome</a></li>
+                <li><a href="#Visiting">Visiting</a></li>
+                <li><a href="#Explore">Explore</a></li>
+            </ul>
+        </div>
+        <div class="footer_tabs">
+            <ul class="list">
+                <li><a href="#Video">Video</a></li>
+                <li><a href="#Tickets">Tickets</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <div class="net"><i class="fab fa-youtube"></i></div>
+            <div class="net"><i class="fab fa-instagram"></i></div>
+            <div class="net"><i class="fab fa-facebook-f"></i></div>
+            <div class="net"><i class="fab fa-twitter"></i></div>
+            <div class="net"><i class="fab fa-pinterest"></i></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
