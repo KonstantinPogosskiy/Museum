@@ -1,0 +1,485 @@
+html {
+    width: 1920px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 1920px;
+    background: #030303;
+}
+
+section {
+    width: 1920px;
+    background: #030303;
+    margin: 0;
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+}
+
+nav {
+    justify-content: space-between;
+    width: 1440px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    margin: 0;
+    padding: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.label {
+    margin: 8px 0 0 0;
+}
+
+.input {
+    margin: 49px 0 0 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.bye_now {
+    width: 175px;
+    height: 50px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.bye_now:hover {
+    background: #9D8665;
+    cursor: pointer;
+}
+
+.counter {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+}
+
+.louvre {
+    font-family: Forum, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 0 0 21px;
+    padding: 0;
+}
+
+.tabs {
+    display: block;
+    width: 50%;
+    margin: 0;
+    padding: 30px;
+}
+
+.list {
+    display: flex;
+    color: #FFFFFF;
+    margin: 0;
+    justify-content: space-between;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+.list a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.list a:hover {
+    color: #9D8665;
+    cursor: pointer;
+}
+
+.bg_museum {
+    width: 100%;
+    background-size: auto;
+    background: #030303 url('./img/background-museum.jpg') no-repeat right;
+}
+
+.welcome_louvre {
+    width: 598px;
+    height: 390px;
+}
+
+h1 {
+    font-family: Forum, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 114px 0 0 0;
+}
+
+h2 {
+    font-family: Forum, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+    margin: 0;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #710707;
+}
+
+h3{
+    font-family: Forum, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    padding: 25px 0 9px 0;
+    border-bottom: 3px solid #710707;
+}
+
+h4{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+h5 {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding: 26px 0 0 0;
+}
+
+.BTN_discovered {
+    width: 360px;
+    height: 75px;
+    background: #710707;
+    border-radius: 10px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    align-items: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 76px 0 210px 0;
+}
+
+.BTN_discovered:hover {
+    cursor: pointer;
+    background: #9d8665;
+}
+
+#Visiting {
+    background: #FFFFFF;
+}
+
+.tours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3em;
+    margin: 75px 0 0 0;
+}
+
+.tours p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0;
+    padding: 10px 0 75px 0;
+}
+
+.tour img {
+    width: 100%;
+}
+
+#Explore {
+    background: #030303;
+}
+
+#Explore .container {
+    display: flex;
+}
+
+.explore_description {
+    margin: 0;
+    padding: 0 30px 0 0;
+}
+
+.explore_image {
+    margin: 0;
+    padding: 90px 0 0 30px;
+}
+.explore_description h2 {
+    margin-bottom: 75px;
+}
+
+.explore_description p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 0 25px 0;
+}
+
+.explore_description span {
+    color: #9d8665;
+}
+
+#Video {
+    background: #FFFFFF;
+}
+
+#Video p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    width: 50%;
+    padding: 40px 0 0 0;
+    margin: 0;
+    align-items: center;
+    color: #000000;
+}
+
+#Video .container {
+    margin: 90px auto 0 auto;
+}
+
+#Video h2 {
+    padding: 40px 0 0 0;
+    width: 50%;
+    margin: 0;
+    border: none;
+}
+
+.video_description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 75px 0;
+}
+
+.bye {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 0 75px 0;
+}
+
+#Tickets span {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+#Tickets input {
+    display: inline-block;
+}
+
+.ticket_img {
+    padding: 0 60px 0 0;
+}
+
+.amount p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.amount .total {
+    padding: 50px 0 50px 0;
+}
+
+.counter p{
+    margin: auto;
+    padding: 0;
+}
+
+.amount .plus {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.amount .minus {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.minus:hover {
+    cursor: pointer;
+    color: #9D8665;
+}
+
+.plus:hover {
+    cursor: pointer;
+    color: #9D8665;
+}
+
+#Contacts {
+    background: #FFFFFF;
+}
+
+.contacts_text {
+    display: flex;
+    justify-content: space-between;
+    margin: 75px 0 75px 0;
+}
+
+.text h5 {
+    color: #000000;
+    margin: 0;
+    padding: 0 0 16px 0;
+}
+
+.text p {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+footer {
+    background: #030303;
+    height: 300px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo {
+    width: 348px;
+}
+
+.social {
+    display: flex;
+    align-content: flex-end;
+
+}
+
+.social i {
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.social i:hover {
+    color: #9D8665;
+    cursor: pointer;
+}
+
+.net {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin: auto auto auto 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer .logo, .footer_tabs, .social {
+    padding: 75px 0 0 0;
+}
+
+
+footer .footer_tabs ul {
+    display: block;
+    padding: 0 153px 0 0;
+}
+
+.footer_tabs {
+    width: 107px;
+    padding-right: 153px;
+}
