@@ -78,7 +78,7 @@ nav {
 }
 
 .counter {
-    width: 150px;
+    width: 50px;
     height: 50px;
     border: 1px solid #FFFFFF;
     display: flex;
@@ -260,6 +260,7 @@ p {
     width: 100%;
 }
 
+
 #Explore {
     background: #030303;
 }
@@ -373,30 +374,30 @@ p {
     padding: 0;
 }
 
-.amount .plus {
+.amount .counter {
+    height: 50px;
+    border: none;
+    padding: 0;
     font-family: Roboto, sans-serif;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 37px;
     text-align: center;
 }
 
-.amount .minus {
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 37px;
-    text-align: center;
+.count {
+    display: flex;
+    margin: auto;
 }
 
-.minus:hover {
+.minus, .plus {
+    height: 50px;
+    width: 50px;
+    border: none;
+    padding: 0;
+    background: #FFFFFF;
+    font-size: 22px;
     cursor: pointer;
-    color: #9D8665;
-}
-
-.plus:hover {
-    cursor: pointer;
-    color: #9D8665;
 }
 
 #Contacts {
