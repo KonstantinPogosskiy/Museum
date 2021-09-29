@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <header>
@@ -21,6 +23,7 @@
                 <li><a href="#Visiting">Visiting</a></li>
                 <li><a href="#Explore">Explore</a></li>
                 <li><a href="#Video">Video</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
                 <li><a href="#Tickets">Tickets</a></li>
                 <li><a href="#Contacts">Contacts</a></li>
             </ul>
@@ -29,13 +32,34 @@
 </header>
 <main>
     <section id="Welcome">
-        <div class="bg_museum">
-            <div class="container">
+        <div class="container">
+            <div class="welcome">
                 <div class="welcome_louvre">
                     <h1>Welcome<br>to the louvre</h1>
                     <p>From the castle to the museum</p>
                 </div>
-                <button class="BTN_discovered">Discovered the Louvre</button>
+                <a class="BTN_discovered" href="tours/tour1.html" target="_blank">Discovered the Louvre</a>
+            </div>
+            <div class="welcome-slider">
+                <div class="slider-line _one">
+                    <span class="start">01</span>
+                    <div class="middle">|</div>
+                    <span class="end">05</span>
+                </div>
+                <div class="slider-line _two">
+                    <img src="img/welcome-slider-line/slide%20pagination.png" alt="#">
+                    <img src="img/welcome-slider-line/slide%20pagination.png" alt="#">
+                    <img src="img/welcome-slider-line/slide%20pagination.png" alt="#">
+                    <img src="img/welcome-slider-line/slide%20pagination.png" alt="#">
+                    <img src="img/welcome-slider-line/slide%20pagination.png" alt="#">
+                </div>
+                <div class="slider-line _three">
+                    <img class='left' src="img/welcome-slider-line/arrow.svg" alt="#">
+                    <img class='right' src="img/welcome-slider-line/arrow.svg" alt="#">
+                </div>
+            </div>
+            <div class="mona-lisa">
+                <img class="Lisa" alt="Lisa" height="750" width="1000" src="img/Lisa.png">
             </div>
         </div>
     </section>
@@ -44,47 +68,59 @@
             <h2>Virtual tour</h2>
             <div class="tours">
                 <div class="tour">
-                    <img alt="#" src="img/Tours/Rectangle_1.jpg">
-                    <h3>Royal Place</h3>
-                    <h4>360° Virtual Tour</h4>
-                    <p>Google Street Panorama View</p>
+                    <a href="tours/tour2.html" target="_blank">
+                        <img alt="#" src="img/Tours/Rectangle_1.jpg">
+                        <h3>Royal Place</h3>
+                        <h4>360° Virtual Tour</h4>
+                        <p>Google Street Panorama View</p>
+                    </a>
                 </div>
                 <div class="tour">
-                    <img alt="#" src="img/Tours/Rectangle_2.jpg">
-                    <h3>Mona Lisa</h3>
-                    <h4>360° Virtual Tour</h4>
-                    <p>Google Street Panorama View</p>
+                    <a href="tours/tour6.html" target="_blank">
+                        <img alt="#" src="img/Tours/Rectangle_5.jpg">
+                        <h3>Mona Lisa</h3>
+                        <h4>360° Virtual Tour</h4>
+                        <p>Google Street Panorama View</p>
+                    </a>
                 </div>
                 <div class="tour">
-                    <img alt="#" src="img/Tours/Rectangle_3.jpg">
-                    <h3>Denon Wing</h3>
-                    <h4>360° Virtual Tour</h4>
-                    <p>Google Street Panorama View</p>
+                    <a href="tours/tour3.html" target="_blank">
+                        <img alt="#" src="img/Tours/Rectangle_2.jpg">
+                        <h3>Denon Wing</h3>
+                        <h4>360° Virtual Tour</h4>
+                        <p>Google Street Panorama View</p>
+                    </a>
                 </div>
                 <div class="tour">
-                    <img alt="#" src="img/Tours/Rectangle_4.jpg">
-                    <h3>Colonnade Perrault</h3>
-                    <h4>360° Virtual Tour</h4>
-                    <p>Google Street Panorama View</p>
+                    <a href="tours/tour4.html" target="_blank">
+                        <img alt="#" src="img/Tours/Rectangle_3.jpg">
+                        <h3>Colonnade Perrault</h3>
+                        <h4>360° Virtual Tour</h4>
+                        <p>Google Street Panorama View</p>
+                    </a>
                 </div>
                 <div class="tour">
-                    <img alt="#" src="img/Tours/Rectangle_5.jpg">
-                    <h3>Greek hall</h3>
-                    <h4>360° Virtual Tour</h4>
-                    <p>Google Street Panorama View</p>
+                    <a href="tours/tour5.html" target="_blank">
+                        <img alt="#" src="img/Tours/Rectangle_6.jpg">
+                        <h3>Greek hall</h3>
+                        <h4>360° Virtual Tour</h4>
+                        <p>Google Street Panorama View</p>
+                    </a>
                 </div>
                 <div class="tour">
-                    <img alt="#" src="img/Tours/Rectangle_6.jpg">
-                    <h3>Night Palace</h3>
-                    <h4>360° Virtual Tour</h4>
-                    <p>Google Street Panorama View</p>
+                    <a href="tours/tour7.html" target="_blank">
+                        <img alt="#" src="img/Tours/Rectangle_4.jpg">
+                        <h3>Night Palace</h3>
+                        <h4>360° Virtual Tour</h4>
+                        <p>Google Street Panorama View</p>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     <section id="Explore">
         <div class="container">
-            <div class="explore_description">
+            <div class="explore_description _black">
                 <h2>Picture explore</h2>
                 <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
                 <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the
@@ -92,16 +128,54 @@
                 <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but
                     because it looked different.</p>
             </div>
-            <div class="explore_image"><img alt="#" src="img/Rectangle.png"></div>
+            <div class="explore_image"><img alt="#" src="img/Rectangle.jpg"></div>
         </div>
     </section>
     <section id="Video">
         <div class="container">
-            <iframe width="1440px" height="714px" src="https://www.youtube.com/embed/zp1BXPX8jcU"></iframe>
             <div class="video_description">
                 <h2>Video journey</h2>
                 <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa
                     or Hammurabi's Code</p>
+            </div>
+            <iframe width="1440" height="714" src="https://www.youtube.com/embed/zp1BXPX8jcU"></iframe>
+            <div class="video-slider">
+                <iframe width="452" height="254" src="https://www.youtube.com/embed/y_CmwHT3WAM"></iframe>
+                <iframe width="452" height="254" src="https://www.youtube.com/embed/x50U79vGqHQ"></iframe>
+                <iframe width="452" height="254" src="https://www.youtube.com/embed/bspPB0jBsCk"></iframe>
+            </div>
+            <div class="video-slider-line">
+                <div class="line">
+                    <img src="img/video-slider-line/arrow-L.svg" alt="arrow-L">
+                    <img src="img/video-slider-line/Ellipse.svg" alt="dot">
+                    <img src="img/video-slider-line/Ellipse.svg" alt="dot">
+                    <img src="img/video-slider-line/Ellipse.svg" alt="dot">
+                    <img src="img/video-slider-line/Ellipse.svg" alt="dot">
+                    <img src="img/video-slider-line/Ellipse.svg" alt="dot">
+                    <img src="img/video-slider-line/arrow-R.svg" alt="arrow-R">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Gallery">
+        <div class="container _black">
+            <h2>Art Gallery</h2>
+            <div class="gallery_desk">
+                <img src="assets/img/galery/galery1.jpg" alt="paint">
+                <img src="assets/img/galery/galery2.jpg" alt="paint">
+                <img src="assets/img/galery/galery3.jpg" alt="paint">
+                <img src="assets/img/galery/galery4.jpg" alt="paint">
+                <img src="assets/img/galery/galery5.jpg" alt="paint">
+                <img src="assets/img/galery/galery6.jpg" alt="paint">
+                <img src="assets/img/galery/galery7.jpg" alt="paint">
+                <img src="assets/img/galery/galery8.jpg" alt="paint">
+                <img src="assets/img/galery/galery9.jpg" alt="paint">
+                <img src="assets/img/galery/galery10.jpg" alt="paint">
+                <img src="assets/img/galery/galery11.jpg" alt="paint">
+                <img src="assets/img/galery/galery12.jpg" alt="paint">
+                <img src="assets/img/galery/galery13.jpg" alt="paint">
+                <img src="assets/img/galery/galery14.jpg" alt="paint">
+                <img src="assets/img/galery/galery15.jpg" alt="paint">
             </div>
         </div>
     </section>
@@ -115,28 +189,38 @@
                 <div class="type">
                     <h5>Ticket Type</h5>
                     <div class="input">
-                        <input type="radio">&nbsp Permanent exhibition
+                        <label>
+                            <input name='radio' type="radio"> Permanent exhibition
+                        </label>
                     </div>
                     <div class="input">
-                        <input type="radio">&nbsp Temporary exhibition
+                        <label>
+                            <input name='radio' type="radio"> Temporary exhibition
+                        </label>
                     </div>
                     <div class="input">
-                        <input type="radio">&nbsp Combined Admission
+                        <label>
+                            <input name='radio' type="radio"> Combined Admission
+                        </label>
                     </div>
                 </div>
                 <div class="amount">
                     <h5>Amount</h5>
                     <p>Basic 18+</p>
-                    <div class="counter">
-                        <p class="minus">-</p>
-                        <p>1</p>
-                        <p class="plus">+</p>
+                    <div class="count">
+                        <button class="minus">-</button>
+                        <label>
+                            <input type="number" class="counter" min="1" max="20" value="1" readonly>
+                        </label>
+                        <button class="plus">+</button>
                     </div>
                     <p>Senior 65+</p>
-                    <div class="counter">
-                        <p class="minus">-</p>
-                        <p>1</p>
-                        <p class="plus">+</p>
+                    <div class="count">
+                        <button class="minus">-</button>
+                        <label>
+                            <input type="number" class="counter" min="1" max="20" value="1" readonly>
+                        </label>
+                        <button class="plus">+</button>
                     </div>
                     <h5 class="total">Total $220</h5>
                     <button class="bye_now">Bye Now</button>
@@ -144,6 +228,7 @@
             </div>
         </div>
     </section>
+    <div class="parallax"></div>
     <section id="Contacts">
         <div class="container">
             <h2>Contacts</h2>
@@ -151,11 +236,12 @@
                 <div class="text">
                     <h5>Palais Royal<br>Musee du Louvre</h5>
                     <p>address: 75001 Paris, France</p>
-                    <p>phone: +33(0) 1 40 20 50 50</p>
-                    <p>mail: info@louvre.fr</p>
+                    <p><a href="tel:+33(0)140205050" class="phone">phone: +33(0) 1 40 20 50 50</a></p>
+                    <p><a href="mailto:info@louvre.fr" class="mail">mail: info@louvre.fr</a></p>
                 </div>
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.563870992307!2d2.337707139242546!3d48.8598909305381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2z0JvRg9Cy0YA!5e0!3m2!1sru!2sby!4v1628975435619!5m2!1sru!2sby" width="960" height="620" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.563870992307!2d2.337707139242546!3d48.8598909305381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2z0JvRg9Cy0YA!5e0!3m2!1sru!2sby!4v1628975435619!5m2!1sru!2sby"
+                            width="960" height="620" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -163,32 +249,39 @@
 </main>
 <footer>
     <div class="container">
-        <div class="logo">
-            <div class="label"><img alt="#" src="img/Vector.png"></div>
-            <div class="louvre"><a href="#">louvre</a></div>
+        <div class="block_1">
+            <div class="logo">
+                <div class="label"><img alt="#" src="img/Vector.png"></div>
+                <div class="louvre"><a href="#">louvre</a></div>
+            </div>
+            <div class="footer_tabs">
+                <ul class="list">
+                    <li><a href="#Visiting">Visiting</a></li>
+                    <li><a href="#Explore">Explore</a></li>
+                    <li><a href="#Video">Video</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Tickets">Tickets</a></li>
+                    <li><a href="#Contacts">Contacts</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer_tabs">
-            <ul class="list">
-                <li><a href="#Welcome">Welcome</a></li>
-                <li><a href="#Visiting">Visiting</a></li>
-                <li><a href="#Explore">Explore</a></li>
-            </ul>
-        </div>
-        <div class="footer_tabs">
-            <ul class="list">
-                <li><a href="#Video">Video</a></li>
-                <li><a href="#Tickets">Tickets</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
-            </ul>
-        </div>
-        <div class="social">
-            <div class="net"><i class="fab fa-youtube"></i></div>
-            <div class="net"><i class="fab fa-instagram"></i></div>
-            <div class="net"><i class="fab fa-facebook-f"></i></div>
-            <div class="net"><i class="fab fa-twitter"></i></div>
-            <div class="net"><i class="fab fa-pinterest"></i></div>
+        <div class="block_2">
+            <div class="social">
+                <div class="net"><i class="fab fa-youtube"></i></div>
+                <div class="net"><i class="fab fa-instagram"></i></div>
+                <div class="net"><i class="fab fa-facebook-f"></i></div>
+                <div class="net"><i class="fab fa-twitter"></i></div>
+                <div class="net"><i class="fab fa-pinterest"></i></div>
+            </div>
         </div>
     </div>
+    <div class="horizonLine"></div>
+    <div class="lastString">
+        <div>© 2021</div>
+        <a href="https://rs.school/">The Rolling Scopes School</a>
+        <a href="https://github.com/KonstantinPogosskiy">KonstantinPogosskiy</a>
+    </div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>

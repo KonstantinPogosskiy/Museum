@@ -1,5 +1,4 @@
 html {
-    width: 1920px;
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -9,12 +8,13 @@ body {
 }
 
 header {
-    width: 1920px;
+    width: 100%;
+    height: 150px;
     background: #030303;
 }
 
 section {
-    width: 1920px;
+    width: 100%;
     background: #030303;
     margin: 0;
 }
@@ -24,20 +24,96 @@ section {
     margin: auto;
 }
 
+#Welcome .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: end;
+    height: 842px;
+}
+
+.welcome {
+    z-index: 1;
+}
+
+.welcome-slider {
+    height: 120px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1;
+}
+
+.welcome_louvre p {
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+
+.slider-line {
+    width: 33.3%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.slider-line img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+._three {
+    justify-content: center;
+}
+
+._one {
+    justify-content: center;
+}
+
+._three img {
+    padding: 0 10px 0 10px;
+}
+
+.slider-line span {
+    color: white;
+    font-family: Roboto;
+    font-size: 22px;
+    line-height: 65px;
+}
+
+.slider-line .middle {
+    font-family: Roboto;
+    font-size: 22px;
+    line-height: 45px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.slider-line .left {
+    transform: rotate(-180deg);
+}
+
+.mona-lisa {
+    position: absolute;
+    z-index: 0;
+    bottom: 60px;
+    left: 440px;
+}
+
 nav {
     justify-content: space-between;
     width: 1440px;
-    height: 200px;
+    height: 150px;
     margin: auto;
     display: flex;
 }
 
 .logo {
     display: flex;
+    justify-content: start;
     width: 50%;
-    height: 50px;
     margin: 0;
-    padding: 30px;
+    align-items: center;
 }
 
 .logo a {
@@ -50,13 +126,12 @@ nav {
 }
 
 .input {
-    margin: 49px 0 0 0;
+    margin: 25px 0 0 0;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
     line-height: 26px;
-    color: #FFFFFF;
 }
 
 .bye_now {
@@ -69,7 +144,9 @@ nav {
     line-height: 26px;
     text-align: center;
     letter-spacing: 2px;
-    color: #000000;
+    background-color: black;
+    color: rgba(255, 255, 255, 1);
+    transition: all ease 0.5s;
 }
 
 .bye_now:hover {
@@ -78,9 +155,8 @@ nav {
 }
 
 .counter {
-    width: 150px;
+    width: 50px;
     height: 50px;
-    border: 1px solid #FFFFFF;
     display: flex;
 }
 
@@ -99,14 +175,14 @@ nav {
 .tabs {
     display: block;
     width: 50%;
-    margin: 0;
-    padding: 30px;
+    margin: auto;
 }
 
 .list {
     display: flex;
     color: #FFFFFF;
     margin: 0;
+    padding: 0;
     justify-content: space-between;
     list-style: none;
     font-family: Roboto, sans-serif;
@@ -120,6 +196,7 @@ nav {
 .list a {
     text-decoration: none;
     color: #FFFFFF;
+    transition: all ease 0.5s;
 }
 
 .list a:hover {
@@ -127,15 +204,8 @@ nav {
     cursor: pointer;
 }
 
-.bg_museum {
-    width: 100%;
-    background-size: auto;
-    background: #030303 url('./img/background-museum.jpg') no-repeat right;
-}
-
 .welcome_louvre {
     width: 598px;
-    height: 390px;
 }
 
 h1 {
@@ -166,7 +236,11 @@ h2 {
     border-bottom: 3px solid #710707;
 }
 
-h3{
+._black h2 {
+    color: #FFFFFF;
+}
+
+h3 {
     font-family: Forum, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -180,7 +254,7 @@ h3{
     border-bottom: 3px solid #710707;
 }
 
-h4{
+h4 {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -197,8 +271,11 @@ h5 {
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
-    color: #FFFFFF;
     margin: 0;
+}
+
+.type h5 {
+    margin-bottom: 50px;
 }
 
 p {
@@ -213,19 +290,24 @@ p {
 }
 
 .BTN_discovered {
+    display: block;
     width: 360px;
-    height: 75px;
+    height: 52px;
     background: #710707;
     border-radius: 10px;
     font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 22px;
     line-height: 26px;
     align-items: center;
     letter-spacing: 2px;
     color: #FFFFFF;
-    margin: 76px 0 210px 0;
+    margin: 75px 0 210px 0;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 24px;
+    transition: all ease 0.5s;
 }
 
 .BTN_discovered:hover {
@@ -259,7 +341,10 @@ p {
 .tour img {
     width: 100%;
 }
-
+.tour a {
+    text-decoration: none;
+    color: #000000;
+}
 #Explore {
     background: #030303;
 }
@@ -275,8 +360,9 @@ p {
 
 .explore_image {
     margin: 0;
-    padding: 90px 0 0 30px;
+    padding: 90px 0 75px 30px;
 }
+
 .explore_description h2 {
     margin-bottom: 75px;
 }
@@ -307,18 +393,18 @@ p {
     font-size: 22px;
     line-height: 38px;
     width: 50%;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
     margin: 0;
     align-items: center;
     color: #000000;
 }
 
 #Video .container {
-    margin: 90px auto 0 auto;
+    padding: 75px 0 0 0;
 }
 
 #Video h2 {
-    padding: 40px 0 0 0;
+    padding: 0;
     width: 50%;
     margin: 0;
     border: none;
@@ -330,29 +416,48 @@ p {
     padding: 0 0 75px 0;
 }
 
+.video-slider {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.video-slider-line {
+    display: flex;
+    justify-content: center;
+    height: 127px;
+    width: 33.3%;
+    margin: 0 auto;
+}
+.video-slider-line img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#Gallery h2 {
+    border: none;
+}
+
+.line {
+    margin: auto;
+}
+
+.line img {
+    padding: 0 10px 0 10px;
+}
+
 .bye {
     display: flex;
     justify-content: space-between;
     padding: 75px 0 75px 0;
 }
 
-#Tickets span {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 26px;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
+#Tickets {
+    background: #FFFFFF;
 }
 
 #Tickets input {
     display: inline-block;
-}
-
-.ticket_img {
-    padding: 0 60px 0 0;
 }
 
 .amount p {
@@ -361,42 +466,44 @@ p {
     font-weight: 300;
     font-size: 22px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .amount .total {
     padding: 50px 0 50px 0;
 }
 
-.counter p{
+.counter p {
     margin: auto;
     padding: 0;
 }
 
-.amount .plus {
+.amount .counter {
+    height: 50px;
+    border: none;
+    padding: 0;
     font-family: Roboto, sans-serif;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 37px;
     text-align: center;
 }
 
-.amount .minus {
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 37px;
-    text-align: center;
+.count {
+    display: flex;
+    margin: 0;
+    border: 3px solid black;
+    width: 150px;
 }
 
-.minus:hover {
+.minus, .plus {
+    height: 50px;
+    width: 33.3%;
+    border: none;
+    padding: 0;
+    background: #FFFFFF;
+    font-size: 22px;
     cursor: pointer;
-    color: #9D8665;
-}
-
-.plus:hover {
-    cursor: pointer;
-    color: #9D8665;
 }
 
 #Contacts {
@@ -427,15 +534,24 @@ p {
     margin: 0;
     padding: 20px 0 0 0;
 }
-
+.parallax {
+    width: 100%;
+    height: 400px;
+    background-image: url('assets/img/parallax.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 footer {
     background: #030303;
-    height: 300px;
+    height: 392px;
 }
 
 footer .container {
     display: flex;
     justify-content: space-between;
+    color: #FFFFFF;
+    height: 201px;
+    padding: 32px 0 32px 0;
 }
 
 footer .logo {
@@ -444,14 +560,15 @@ footer .logo {
 
 .social {
     display: flex;
-    align-content: flex-end;
-
+    justify-content: space-between;
+    align-items: end;
 }
 
 .social i {
     color: #FFFFFF;
     padding: 10px;
     font-size: 20px;
+    transition: all ease 0.5s;
 }
 
 .social i:hover {
@@ -464,22 +581,53 @@ footer .logo {
     width: 40px;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
-    margin: auto auto auto 24px;
+    margin: 0 0 0 25px;
     text-align: center;
-    vertical-align: middle;
 }
 
-footer .logo, .footer_tabs, .social {
-    padding: 75px 0 0 0;
-}
-
-
-footer .footer_tabs ul {
-    display: block;
-    padding: 0 153px 0 0;
+.footer_tabs .list {
+    display: flex;
+    height: 150px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    opacity: 0.6;
 }
 
 .footer_tabs {
-    width: 107px;
-    padding-right: 153px;
+    margin: 70px 0 0 0;
+    width: 60%;
+    text-align: start;
+}
+.block_1 {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+}
+.block_2 {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+.horizonLine {
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+}
+.lastString {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    height: 124px;
+    width: 1440px;
+    margin: auto;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 22px;
+    opacity: 0.5;
+}
+.lastString a {
+    text-decoration: none;
+    color: white;
 }
