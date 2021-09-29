@@ -609,25 +609,3 @@ footer .logo {
     justify-content: end;
     width: 40%;
 }
-.horizonLine {
-    height: 2px;
-    width: 100%;
-    background-color: #FFFFFF;
-    opacity: 0.5;
-}
-.lastString {
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    height: 124px;
-    width: 1440px;
-    margin: auto;
-    align-items: center;
-    font-family: Roboto;
-    font-size: 22px;
-    opacity: 0.5;
-}
-.lastString a {
-    text-decoration: none;
-    color: white;
-}
